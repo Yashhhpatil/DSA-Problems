@@ -1,1 +1,23 @@
+Q.1 On Palindrome
 
+public class string{
+    public static void main(String[] args){
+        String str="Yash";
+        int left=0,right=str.length()-1;
+        boolean isPalindrome=true;
+        while(left<right){
+            if(str.charAt(left)!=str.charAt(right)){
+                isPalindrome=false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        if(isPalindrome==false){
+            System.out.println("It is not an Palindrome");
+        }
+        else{
+            System.out.println("It is an Palindrome");
+        }
+    }
+}
