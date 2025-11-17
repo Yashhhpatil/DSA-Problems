@@ -21,3 +21,24 @@ public class string{
         }
     }
 }
+
+Q2.total numbers of Vowels and Consonents
+public class string{
+    static void countVowelConsonents(String str){
+        int Vowelscount=0,Consonentscount=0;
+        for(int i=0;i<str.length();i++){
+             char ch=str.charAt(i);
+             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                 Vowelscount++;
+             }
+             else if(ch>='a'&&ch<='z'){
+                 Consonentscount++;
+             }
+            
+        }
+        System.out.println("total Vowels are="+Vowelscount+"total Consonents are="+Consonentscount);
+    }
+    public static void main(String[] args){
+        countVowelConsonents("Rohan1234".toLowerCase());
+    }
+}
